@@ -1,0 +1,19 @@
+/* AUTOMATICALLY GENERATED ON Wed Sep 16 01:02:20 CST 2020*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "registro", "**";
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "recuperar", "**";
+  permission javax.security.jacc.WebRoleRefPermission "login", "**";
+  permission javax.security.jacc.WebRoleRefPermission "solicitarcodigo", "**";
+  permission javax.security.jacc.WebRoleRefPermission "FacesServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+
