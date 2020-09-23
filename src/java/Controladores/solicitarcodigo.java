@@ -33,12 +33,11 @@ public class solicitarcodigo extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter() ;
-        String nittext = "12a3756.78-9";
+        String nittext = "12345678-9";
          Pattern pattern = Pattern.compile("[^0-9]"); 
          Matcher matcher = pattern.matcher(nittext); 
          String number = matcher.replaceAll(""); 
          int nit = Integer.parseInt(number);
-         System.out.println(number);
     
     }
 

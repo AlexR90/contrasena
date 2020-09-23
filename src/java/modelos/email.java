@@ -113,14 +113,7 @@ public boolean enviarcorreo (String correo,String codigo){
  return false;
  }
 
-public static void main (String [] args){
-    
-    email send = new email();
-    int nit = 123456785;
-    
- send.mastermail(nit);
-    
-}
+
     
 
 }
