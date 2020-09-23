@@ -100,7 +100,19 @@
       </div><!-- tab-content -->
       
 </div> <!-- /form -->
-
+<div class="overlay" id="overlay">
+            <div class="popup">
+                <a href="index.jsp" id="btn-cerrarpopup" class="btn-cerrar-popup">x</a>
+                <h4 class="hh4">BIENVENIDO</h4>
+                <h5 class="hh5">INGRESAR NIT DE PROVEEDOR!!</h5>
+                <form class="contendordiv">
+                    <div class="contenedor-inputs">
+                        <input class="inputnit"type="text" placeholder="Nit">
+                    </div>
+                    <button class="btn-submit">enviar</button>
+                </form>    
+            </div>
+        </div>
 </body>
   <script src="js/index.js"></script>
 </html>    
