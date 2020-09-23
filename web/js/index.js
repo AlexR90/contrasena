@@ -46,3 +46,16 @@ $('.tab a').on('click', function (e) {
   $(target).fadeIn(600);
   
 });
+var abrirpopup = document.getElementById('abrirmodal'),
+        overlay = document.getElementById('overlay'),
+        popup = document.getElementById('popup'),
+        cerrarpopup = document.getElementById('btn-cerrarpopup');
+
+abrirpopup.addEventListener('click', function(){
+    overlay.classList.add('active');
+    popup.classList.add('active');
+});
+cerrarpopup.addEventListener('click', function(){
+    overlay.classList.remove('active');
+    popup.classList.remove('active');
+});
