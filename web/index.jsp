@@ -17,7 +17,7 @@
     <link href="css/index.css" rel="stylesheet">
   <title>Acceso</title>
 </head>
-<body>
+<body style="overflow-y:hidden">
 
 <div class="form">
       
@@ -95,19 +95,19 @@
           </div>
           <button class="button button-block"/>Acceder</button>
           </form>
-           <p  ><a href="principal.jsp">Olvido password?</a></p>
+          <button class="abrirmodal" id="abrirmodal">Olvido password?</button>
         </div>
       </div><!-- tab-content -->
       
 </div> <!-- /form -->
-<div class="overlay" id="overlay">
-            <div class="popup">
-                <a href="index.jsp" id="btn-cerrarpopup" class="btn-cerrar-popup">x</a>
+<div class="overlay" id="overlay" >
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrarpopup" class="btn-cerrar-popup">x</a>
                 <h4 class="hh4">BIENVENIDO</h4>
                 <h5 class="hh5">INGRESAR NIT DE PROVEEDOR!!</h5>
                 <form class="contendordiv">
                     <div class="contenedor-inputs">
-                        <input class="inputnit"type="text" placeholder="Nit">
+                        <input class="inputnit" type="text" placeholder="nit" onkeypress="return validarnumero(event);" required>
                     </div>
                     <button class="btn-submit">enviar</button>
                 </form>    

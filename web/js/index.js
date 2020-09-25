@@ -59,3 +59,18 @@ cerrarpopup.addEventListener('click', function(){
     overlay.classList.remove('active');
     popup.classList.remove('active');
 });
+
+const validarnumero = (evt) =>{
+    
+    if(window.event){
+        keynum = evt.keyCode;
+    }else{
+        keynum = evt.which;
+    }
+    
+    if((keynum > 47 && keynum < 58)||keynum === 8 || keynum === 13 ){
+        return true;
+    }else{
+        return false;
+    }
+};
