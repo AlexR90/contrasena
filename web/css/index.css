@@ -162,6 +162,14 @@
 .recuperarcont{
      bottom: 5px;
 }
+.abrirmodal{
+    background: transparent;
+    border: none !important;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    
+}
 /*Aqui inicia el modal*/
 .overlay{
   
@@ -252,8 +260,4 @@
     position: absolute;
     right: 10%;
     bottom: 15%
-}
-.abrirmodal{
-    background-color: black;
-  
 }
