@@ -46,3 +46,31 @@ $('.tab a').on('click', function (e) {
   $(target).fadeIn(600);
   
 });
+var abrirpopup = document.getElementById('abrirmodal'),
+        overlay = document.getElementById('overlay'),
+        popup = document.getElementById('popup'),
+        cerrarpopup = document.getElementById('btn-cerrarpopup');
+
+abrirpopup.addEventListener('click', function(){
+    overlay.classList.add('active');
+    popup.classList.add('active');
+});
+cerrarpopup.addEventListener('click', function(){
+    overlay.classList.remove('active');
+    popup.classList.remove('active');
+});
+
+const validarnumero = (evt) =>{
+    
+    if(window.event){
+        keynum = evt.keyCode;
+    }else{
+        keynum = evt.which;
+    }
+    
+    if((keynum > 47 && keynum < 58)||keynum === 8 || keynum === 13 ){
+        return true;
+    }else{
+        return false;
+    }
+};
